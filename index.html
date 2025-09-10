@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title -->
     <title>Green Earth</title>
+    <!-- css -->
     <link rel="stylesheet" href="./style.css" />
+    <!-- font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -12,17 +15,21 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- daisyUI -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
       type="text/css"
     />
+    <!-- tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
   </head>
   <body>
+    <!-- Nav -->
     <nav>
       <div class="navbar bg-base-100 shadow-sm bg-green-500">
-        <div class="navbar-start text-white px-20">
+        <div class="navbar-start text-white md:px-20">
           <a class="btn btn-ghost text-xl">Green Earth</a>
         </div>
         <div class="navbar-center hidden lg:flex text-white">
@@ -34,12 +41,30 @@
             <li><a>Plant a tree</a></li>
           </ul>
         </div>
-        <div class="navbar-end px-20">
+        <div class="navbar-end md:px-20">
           <a class="btn rounded-4xl bg-yellow-300 text-green-500"
             >Plant a tree</a
           >
         </div>
       </div>
     </nav>
+    <section>
+        <div class="banner bg-green-100 flex justify-between items-center">
+            <div class="">
+                <img src="./assets/hero-leaf1.png" alt="">
+            </div>
+            <div class="items-center text-center">
+                <h1 class="font-bold md:text-3xl">Plant a Tree, Grow a Future</h1>
+            <p class="text-[12px]">Join our mission to plant 1 million trees and make the Earth greener for future generations</p>
+            <a class="btn rounded-4xl bg-yellow-300 text-green-500 my-7"
+            >Plant a tree</a>
+            </div>
+            <div class="">
+                <img src="./assets/hero-leaf2.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- js -->
+    <script src="./script.js"></script>
   </body>
 </html>
