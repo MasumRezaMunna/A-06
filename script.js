@@ -58,8 +58,10 @@ const displayPlants = (plants) => {
         class="w-full h-32 object-cover rounded-lg mb-3">
       <h4 class="font-bold text-lg">${plant.name}</h4>
       <p class="text-sm text-gray-600 mb-2">${plant.description.slice(0, 60)}...</p>
-      <span class="text-green-600 text-sm font-semibold">${plant.category}</span>
-      <p class="font-bold mt-2">৳${plant.price}</p>
+      <div class="flex justify-between">
+      <span class="mt-auto bg-green-200 text-green px-2 py-1 rounded-full text-green-600 text-sm font-semibold my-2">${plant.category}</span>
+      <p class="font-bold my-2">৳${plant.price}</p>
+      </div>
       <button onclick="addToCart('${plant.id}', '${plant.name}', ${plant.price})" 
         class="mt-auto bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full">
         Add to Cart
