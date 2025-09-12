@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- title -->
     <title>Green Earth</title>
-    <!-- css -->
-    <link rel="stylesheet" href="./style.css" />
     <!-- font awesome -->
     <link
       rel="stylesheet"
@@ -23,7 +21,6 @@
     />
     <!-- tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
   </head>
   <body>
     <!-- Nav -->
@@ -48,22 +45,53 @@
         </div>
       </div>
     </nav>
+    <!-- banner -->
     <section>
-        <div class="banner bg-green-100 flex justify-between items-center">
-            <div class="">
-                <img src="./assets/hero-leaf1.png" alt="">
-            </div>
-            <div class="items-center text-center">
-                <h1 class="font-bold md:text-3xl">Plant a Tree, Grow a Future</h1>
-            <p class="text-[12px]">Join our mission to plant 1 million trees and make the Earth greener for future generations</p>
-            <a class="btn rounded-4xl bg-yellow-300 text-green-500 my-7"
-            >Plant a tree</a>
-            </div>
-            <div class="">
-                <img src="./assets/hero-leaf2.png" alt="">
-            </div>
+      <div class="banner bg-green-100 flex justify-between items-center">
+        <div class="">
+          <img src="./assets/hero-leaf1.png" alt="" />
         </div>
+        <div class="items-center text-center">
+          <h1 class="font-bold md:text-3xl">Plant a Tree, Grow a Future</h1>
+          <p class="text-[12px]">
+            Join our mission to plant 1 million trees and make the Earth greener
+            for future generations
+          </p>
+          <a class="btn rounded-4xl bg-yellow-300 text-green-500 my-7"
+            >Plant a tree</a
+          >
+        </div>
+        <div class="">
+          <img src="./assets/hero-leaf2.png" alt="" />
+        </div>
+      </div>
     </section>
+    <!-- campaign -->
+    <section class="bg-green-50">
+    <div class="container mx-auto p-6 grid grid-cols-12 gap-6">
+      <!-- Categories -->
+      <aside class="col-span-2 bg-white rounded-xl p-4 shadow-sm">
+        <h3 class="text-lg font-bold mb-4">Categories</h3>
+        <ul id="category-list" class="space-y-2"></ul>
+      </aside>
+
+      <!-- Plants -->
+      <main class="col-span-7">
+        <h2 class="text-2xl font-bold text-center mb-6">Choose Your Trees</h2>
+        <div id="plant-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+      </main>
+
+      <!-- Cart -->
+      <aside class="col-span-3 bg-white rounded-xl p-4 shadow-sm">
+        <h3 class="text-lg font-bold mb-4">Your Cart</h3>
+        <ul id="cart-list" class="space-y-2"></ul>
+        <div class="flex justify-between">
+            <p class="mt-4 font-semibold">Total: </p>
+            <p class="mt-4 font-semibold" id="cart-total">৳0</p>
+        </div>
+      </aside>
+    </div>
+  </section>
     <!-- js -->
     <script src="./script.js"></script>
   </body>
